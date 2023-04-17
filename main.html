@@ -12,10 +12,10 @@
 			//Write your code here
 			if(arr.length<2)
 			{
-			    return -Infinity; // return -Infinity if the array is empty or has only 1 element
+			    return -1; 
 			  }
   
-		  let first = -Infinity, second = -Infinity;
+		  let first = -1, second = -1;
 
 			  for (let i = 0; i <=arr.length; i++) {
 			    let current = arr[i];
@@ -27,18 +27,18 @@
 		    }
 		  }
   
-  if (second === -Infinity) {
-    return -Infinity; // return -Infinity if all elements in the array are the same
+  if (second === -1) {
+    return -1; 
   }
   
 	    return second;
 		}		
 
 		function Main() {
-			// var n = prompt("Enter the number of elements");
+			var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
-				// arr[i] = prompt("Enter element " + (i+1));
+				arr[i] = prompt("Enter element " + (i+1));
 			}
 			alert(secondHighest(arr));
 		}
